@@ -4,3 +4,5 @@
 fixtures:
   forge_modules:
     stdlib: "puppetlabs/stdlib"
+    yum: "puppet/yum"
+    alternatives: "puppet/alternatives"
