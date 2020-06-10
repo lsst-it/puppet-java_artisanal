@@ -3,9 +3,11 @@
 #
 # @param source
 #   URL to JDK rpm
+#
 # @param package
 #   String naming the package installed by the rpm; eg jdk1.8.
 #   In older rpms, this had a version suffix, eg: jdk1.8.0_112
+#
 # @param dir
 #   String giving the install directory in /usr/java; eg jdk1.8.0_251-amd64.
 #   The -amd64 suffix is a semi-recent addition, eg
