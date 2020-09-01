@@ -1,6 +1,6 @@
 # java_artisanal
 
-![Build Status](https://travis-ci.org/lsst-it/puppet-java_artisanal.svg?branch=master)](https://travis-ci.org/lsst-it/puppet-java_artisanal)
+![Build Status](https://travis-ci.com/lsst-it/puppet-java_artisanal.svg?branch=master)](https://travis-ci.com/lsst-it/puppet-java_artisanal)
 
 #### Table of Contents
 
