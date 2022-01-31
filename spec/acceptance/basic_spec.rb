@@ -5,9 +5,9 @@ require 'spec_helper_acceptance'
 describe 'java_artisanal class' do
   context 'without parameters' do
     let(:pp) do
-      <<-EOS
+      <<-PP
       class{ 'java_artisanal': }
-      EOS
+      PP
     end
 
     it_behaves_like 'an idempotent resource'

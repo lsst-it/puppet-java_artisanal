@@ -2,14 +2,14 @@
 
 ![Build Status](https://travis-ci.com/lsst-it/puppet-java_artisanal.svg?branch=master)](https://travis-ci.com/lsst-it/puppet-java_artisanal)
 
-#### Table of Contents
+## Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with java_artisanal](#setup)
+1. [Setup - The basics of getting started with java_artisanal](#setup)
     * [What java_artisanal affects](#what-java_artisanal-affects)
     * [Setup requirements](#setup-requirements)
-3. [Usage - Configuration options and additional functionality](#usage)
-4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+1. [Usage - Configuration options and additional functionality](#usage)
+1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 
 ## Description
 
