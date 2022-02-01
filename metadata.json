@@ -2,9 +2,9 @@
   "name": "lsst-java_artisanal",
   "version": "2.0.0",
   "author": "AURA/LSST",
-  "summary": "",
+  "summary": "Installs `java` via a direct HTTP[S] URL",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/lsst-it/puppet-java_artisanal.git",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
