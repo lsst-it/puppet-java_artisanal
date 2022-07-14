@@ -20,9 +20,11 @@ class java_artisanal::java17 (
     password => $java_artisanal::pkgurl_pass,
   }
 
+# lint:ignore:package_ensure
   package { $package:
     ensure   => 'latest',
     provider => 'rpm',
     source   => $rpmfile,
   }
+# lint:endignore
 }

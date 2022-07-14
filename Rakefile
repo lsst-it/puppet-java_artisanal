@@ -42,8 +42,6 @@ task :reference, [:debug, :backtrace] do |_t, args|
   Rake::Task['strings:generate:reference'].invoke(patterns, args[:debug], args[:backtrace])
 end
 
-PuppetLint.configuration.send('disable_package_ensure')
-
 begin
   require 'github_changelog_generator/task'
   require 'puppet_blacksmith'
