@@ -6,3 +6,4 @@ fixtures:
     stdlib: "puppetlabs/stdlib"
     yum: "puppet/yum"
     alternatives: "puppet/alternatives"
+    archive: "puppet/archive"
