@@ -16,13 +16,6 @@
 #   https://bugs.openjdk.java.net/browse/JDK-8202528
 #   TODO this seems like something we should derive.
 #
-# @param pkgurl
-#   String specifying URL to fetch (java17) sources from.
-# @param pkgurl_user
-#   String specifying username to access pkgurl.
-# @param pkgurl_pass
-#   String specifying password to access pkgurl.
-#
 class java_artisanal (
   Stdlib::HTTPUrl $source  = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
   String          $package = 'jdk1.8',
