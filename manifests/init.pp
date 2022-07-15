@@ -17,12 +17,10 @@
 #   TODO this seems like something we should derive.
 #
 class java_artisanal (
-  Stdlib::HTTPUrl $source  = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
+  Stdlib::HTTPUrl $source = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
   String          $package = 'jdk1.8',
   String          $dir     = 'jdk1.8.0_202-amd64',
 ) {
-  include java_artisanal::java17
-
   yum::install { $package:
     ensure  => present,
     source  => $source,
