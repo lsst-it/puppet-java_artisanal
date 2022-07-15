@@ -24,12 +24,9 @@
 #   String specifying password to access pkgurl.
 #
 class java_artisanal (
-  Stdlib::HTTPUrl $source      = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
-  String          $package     = 'jdk1.8',
-  String          $dir         = 'jdk1.8.0_202-amd64',
-  String          $pkgurl      = 'https://example.org',
-  String          $pkgurl_user = 'someuser',
-  String          $pkgurl_pass = 'somepass',
+  Stdlib::HTTPUrl $source  = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
+  String          $package = 'jdk1.8',
+  String          $dir     = 'jdk1.8.0_202-amd64',
 ) {
   include java_artisanal::java17
 
