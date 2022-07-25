@@ -47,5 +47,10 @@ class java_artisanal (
       priority => 1000,
       require  => Yum::Install[$package],
     }
+
+    alternatives { $cmd:
+      path => $dest,
+      mode => 'manual',
+    }
   }
 }
