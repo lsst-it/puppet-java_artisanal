@@ -50,7 +50,6 @@ class java_artisanal (
 
     alternatives { $cmd:
       path => $dest,
-      mode => 'manual',
     }
   }
 }
