@@ -20,7 +20,7 @@ describe 'java_artisanal' do
         dest = "/usr/java/jdk1.8.0_202-amd64/bin/#{cmd}"
         is_expected.to contain_alternative_entry(dest).with(
           ensure: 'present',
-          priority: 1000,
+          priority: 1000
         )
       end
     end
