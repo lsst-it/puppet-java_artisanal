@@ -4,7 +4,7 @@ require 'spec_helper_acceptance'
 
 describe 'java_artisanal class' do
   context 'without parameters' do
-    let(:pp) do
+    let(:manifest) do
       <<-PP
       class{ 'java_artisanal': }
       PP
