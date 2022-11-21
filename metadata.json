@@ -1,6 +1,6 @@
 {
   "name": "lsst-java_artisanal",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "author": "AURA/LSST",
   "summary": "Installs `java` via a direct HTTP[S] URL",
   "license": "Apache-2.0",
@@ -12,7 +12,7 @@
     },
     {
       "name": "puppet/yum",
-      "version_requirement": ">= 4.0.0 < 6.0.0"
+      "version_requirement": ">= 4.0.0 < 7.0.0"
     },
     {
       "name": "puppet/alternatives",
