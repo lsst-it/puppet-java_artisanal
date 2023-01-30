@@ -7,7 +7,7 @@
 ### Classes
 
 * [`java_artisanal`](#java_artisanal): Install jdk via RPMs
-* [`java_artisanal::java17`](#java_artisanaljava17): Install jdk 17 via RPMs
+* [`java_artisanal::java17`](#java_artisanal--java17): Install jdk 17 via RPMs
 
 ## Classes
 
@@ -19,11 +19,11 @@ Install jdk via RPMs
 
 The following parameters are available in the `java_artisanal` class:
 
-* [`source`](#source)
-* [`package`](#package)
-* [`dir`](#dir)
+* [`source`](#-java_artisanal--source)
+* [`package`](#-java_artisanal--package)
+* [`dir`](#-java_artisanal--dir)
 
-##### <a name="source"></a>`source`
+##### <a name="-java_artisanal--source"></a>`source`
 
 Data type: `Stdlib::HTTPUrl`
 
@@ -31,7 +31,7 @@ URL to JDK rpm
 
 Default value: `'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm'`
 
-##### <a name="package"></a>`package`
+##### <a name="-java_artisanal--package"></a>`package`
 
 Data type: `String`
 
@@ -40,7 +40,7 @@ In older rpms, this had a version suffix, eg: jdk1.8.0_112
 
 Default value: `'jdk1.8'`
 
-##### <a name="dir"></a>`dir`
+##### <a name="-java_artisanal--dir"></a>`dir`
 
 Data type: `String`
 
@@ -53,7 +53,7 @@ TODO this seems like something we should derive.
 
 Default value: `'jdk1.8.0_202-amd64'`
 
-### <a name="java_artisanaljava17"></a>`java_artisanal::java17`
+### <a name="java_artisanal--java17"></a>`java_artisanal::java17`
 
 Install jdk 17 via RPMs
 
@@ -61,13 +61,13 @@ Install jdk 17 via RPMs
 
 The following parameters are available in the `java_artisanal::java17` class:
 
-* [`source`](#source)
-* [`package`](#package)
-* [`version`](#version)
-* [`source_user`](#source_user)
-* [`source_pass`](#source_pass)
+* [`source`](#-java_artisanal--java17--source)
+* [`package`](#-java_artisanal--java17--package)
+* [`version`](#-java_artisanal--java17--version)
+* [`source_user`](#-java_artisanal--java17--source_user)
+* [`source_pass`](#-java_artisanal--java17--source_pass)
 
-##### <a name="source"></a>`source`
+##### <a name="-java_artisanal--java17--source"></a>`source`
 
 Data type: `String`
 
@@ -75,7 +75,7 @@ String giving source URL for rpm.
 
 Default value: `'https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux.x86_64.rpm'`
 
-##### <a name="package"></a>`package`
+##### <a name="-java_artisanal--java17--package"></a>`package`
 
 Data type: `String`
 
@@ -83,7 +83,7 @@ String naming the package installed by the rpm; eg zulu-17.
 
 Default value: `'zulu-17'`
 
-##### <a name="version"></a>`version`
+##### <a name="-java_artisanal--java17--version"></a>`version`
 
 Data type: `String`
 
@@ -91,19 +91,19 @@ String giving version of installed rpm.
 
 Default value: `'17.34+19'`
 
-##### <a name="source_user"></a>`source_user`
+##### <a name="-java_artisanal--java17--source_user"></a>`source_user`
 
 Data type: `Optional[String]`
 
 Optional string giving username to access source URL.
 
-Default value: ``undef``
+Default value: `undef`
 
-##### <a name="source_pass"></a>`source_pass`
+##### <a name="-java_artisanal--java17--source_pass"></a>`source_pass`
 
 Data type: `Optional[String]`
 
 Optional string giving password to access source URL.
 
-Default value: ``undef``
+Default value: `undef`
 
