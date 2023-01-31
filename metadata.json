@@ -1,6 +1,6 @@
 {
   "name": "lsst-java_artisanal",
-  "version": "2.4.0",
+  "version": "2.4.1-rc0",
   "author": "AURA/LSST",
   "summary": "Installs `java` via a direct HTTP[S] URL",
   "license": "Apache-2.0",
