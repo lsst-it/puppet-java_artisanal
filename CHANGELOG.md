@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.1.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.1.0) (2023-08-22)
+
+[Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.0.0...v3.1.0)
+
+**Implemented enhancements:**
+
+- allow stdlib 9.x [\#29](https://github.com/lsst-it/puppet-java_artisanal/pull/29) ([jhoblitt](https://github.com/jhoblitt))
+
 ## [v3.0.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.0.0) (2023-06-23)
 
 [Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v2.4.0...v3.0.0)
