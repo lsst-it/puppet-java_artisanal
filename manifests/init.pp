@@ -16,10 +16,15 @@
 #   https://bugs.openjdk.java.net/browse/JDK-8202528
 #   TODO this seems like something we should derive.
 #
+# @param set_alternatives
+#   Optional boolean. If false, do not set the /usr/bin alternatives
+#   to point to this version.
+#
 class java_artisanal (
-  Stdlib::HTTPUrl $source = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
-  String          $package = 'jdk1.8',
-  String          $dir     = 'jdk1.8.0_202-amd64',
+  Stdlib::HTTPUrl   $source = 'https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-linux-x64.rpm',
+  String            $package = 'jdk1.8',
+  String            $dir     = 'jdk1.8.0_202-amd64',
+  Optional[Boolean] $set_alternatives = true,
 ) {
   yum::install { $package:
     ensure  => present,
@@ -48,8 +53,10 @@ class java_artisanal (
       require  => Yum::Install[$package],
     }
 
-    alternatives { $cmd:
-      path => $dest,
+    if $set_alternatives {
+      alternatives { $cmd:
+        path => $dest,
+      }
     }
   }
 }
