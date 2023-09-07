@@ -10,23 +10,22 @@
 # @param version
 #   String giving version of installed rpm.
 #
+# @param set_alternatives
+#   If true, set the /usr/bin alternatives to point to this version.
+#
 # @param source_user
 #   Optional string giving username to access source URL.
 #
 # @param source_pass
 #   Optional string giving password to access source URL.
 #
-# @param set_alternatives
-#   Optional boolean. If true, set the /usr/bin alternatives
-#   to point to this version.
-#
 class java_artisanal::java17 (
-  String            $source      = 'https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux.x86_64.rpm',
-  String            $package     = 'zulu-17',
-  String            $version     = '17.34+19',
-  Optional[String]  $source_user = undef,
-  Optional[String]  $source_pass = undef,
-  Optional[Boolean] $set_alternatives = !$java_artisanal::set_alternatives,
+  String           $source      = 'https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux.x86_64.rpm',
+  String           $package     = 'zulu-17',
+  String           $version     = '17.34+19',
+  Boolean          $set_alternatives = !$java_artisanal::set_alternatives,
+  Optional[String] $source_user = undef,
+  Optional[String] $source_pass = undef,
 ) {
   $rpmfile = "/var/tmp/${package}-${version}.rpm"
 

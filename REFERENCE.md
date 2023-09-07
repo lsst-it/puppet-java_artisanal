@@ -56,10 +56,9 @@ Default value: `'jdk1.8.0_202-amd64'`
 
 ##### <a name="-java_artisanal--set_alternatives"></a>`set_alternatives`
 
-Data type: `Optional[Boolean]`
+Data type: `Boolean`
 
-Optional boolean. If false, do not set the /usr/bin alternatives
-to point to this version.
+If false, do not set the /usr/bin alternatives to point to this version.
 
 Default value: `true`
 
@@ -74,9 +73,9 @@ The following parameters are available in the `java_artisanal::java17` class:
 * [`source`](#-java_artisanal--java17--source)
 * [`package`](#-java_artisanal--java17--package)
 * [`version`](#-java_artisanal--java17--version)
+* [`set_alternatives`](#-java_artisanal--java17--set_alternatives)
 * [`source_user`](#-java_artisanal--java17--source_user)
 * [`source_pass`](#-java_artisanal--java17--source_pass)
-* [`set_alternatives`](#-java_artisanal--java17--set_alternatives)
 
 ##### <a name="-java_artisanal--java17--source"></a>`source`
 
@@ -102,6 +101,14 @@ String giving version of installed rpm.
 
 Default value: `'17.34+19'`
 
+##### <a name="-java_artisanal--java17--set_alternatives"></a>`set_alternatives`
+
+Data type: `Boolean`
+
+If true, set the /usr/bin alternatives to point to this version.
+
+Default value: `!$java_artisanal::set_alternatives`
+
 ##### <a name="-java_artisanal--java17--source_user"></a>`source_user`
 
 Data type: `Optional[String]`
@@ -117,13 +124,4 @@ Data type: `Optional[String]`
 Optional string giving password to access source URL.
 
 Default value: `undef`
-
-##### <a name="-java_artisanal--java17--set_alternatives"></a>`set_alternatives`
-
-Data type: `Optional[Boolean]`
-
-Optional boolean. If true, set the /usr/bin alternatives
-to point to this version.
-
-Default value: `!$java_artisanal::set_alternatives`
 
