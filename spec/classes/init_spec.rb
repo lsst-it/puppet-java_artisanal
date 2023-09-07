@@ -16,11 +16,17 @@ describe 'java_artisanal' do
       jconsole
       jstack
     ].each do |cmd|
+      dest = "/usr/java/jdk1.8.0_202-amd64/bin/#{cmd}"
       it do
-        dest = "/usr/java/jdk1.8.0_202-amd64/bin/#{cmd}"
         is_expected.to contain_alternative_entry(dest).with(
           ensure: 'present',
           priority: 1000
+        )
+      end
+
+      it do
+        is_expected.to contain_alternatives(cmd).with(
+          path: dest
         )
       end
     end
