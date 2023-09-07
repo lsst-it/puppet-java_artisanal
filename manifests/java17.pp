@@ -10,6 +10,9 @@
 # @param version
 #   String giving version of installed rpm.
 #
+# @param set_alternatives
+#   If true, set the /usr/bin alternatives to point to this version.
+#
 # @param source_user
 #   Optional string giving username to access source URL.
 #
@@ -20,6 +23,7 @@ class java_artisanal::java17 (
   String           $source      = 'https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux.x86_64.rpm',
   String           $package     = 'zulu-17',
   String           $version     = '17.34+19',
+  Boolean          $set_alternatives = !$java_artisanal::set_alternatives,
   Optional[String] $source_user = undef,
   Optional[String] $source_pass = undef,
 ) {
@@ -36,5 +40,33 @@ class java_artisanal::java17 (
     ensure   => $version,
     provider => 'rpm',
     source   => $rpmfile,
+  }
+
+  $cmds = [
+    'java',
+    'javac',
+#    'javaws',
+    'jar',
+    'jconsole',
+    'jstack',
+  ]
+
+  $cmds.each |$cmd| {
+    $src = "/usr/bin/${cmd}"
+    $dest = "/usr/lib/jvm/zulu-17/bin/${cmd}"
+
+    alternative_entry { $dest:
+      ensure   => present,
+      altlink  => $src,
+      altname  => $cmd,
+      priority => 900,
+      require  => Package[$package],
+    }
+
+    if $set_alternatives {
+      alternatives { $cmd:
+        path => $dest,
+      }
+    }
   }
 }
