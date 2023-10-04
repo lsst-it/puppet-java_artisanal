@@ -4,12 +4,21 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.3.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.3.0) (2023-10-04)
+
+[Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.2.0...v3.3.0)
+
+**Implemented enhancements:**
+
+- allow puppet/yum 7.x [\#33](https://github.com/lsst-it/puppet-java_artisanal/pull/33) ([jhoblitt](https://github.com/jhoblitt))
+
 ## [v3.2.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.2.0) (2023-09-07)
 
 [Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.1.0...v3.2.0)
 
 **Implemented enhancements:**
 
+- Release 3.2.0 [\#32](https://github.com/lsst-it/puppet-java_artisanal/pull/32) ([glennmorris](https://github.com/glennmorris))
 - Allow for java 17 to be set as the /usr/bin alternative [\#31](https://github.com/lsst-it/puppet-java_artisanal/pull/31) ([glennmorris](https://github.com/glennmorris))
 
 ## [v3.1.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.1.0) (2023-08-22)
