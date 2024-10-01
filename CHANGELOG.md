@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.4.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.4.0) (2024-10-01)
+
+[Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.3.0...v3.4.0)
+
+**Implemented enhancements:**
+
+- \(metadata\) bump puppet alternatives version constraint [\#38](https://github.com/lsst-it/puppet-java_artisanal/pull/38) ([dtapiacl](https://github.com/dtapiacl))
+- \(puppet-java-artisanal\) add license file [\#35](https://github.com/lsst-it/puppet-java_artisanal/pull/35) ([dtapiacl](https://github.com/dtapiacl))
+
 ## [v3.3.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.3.0) (2023-10-04)
 
 [Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.2.0...v3.3.0)
