@@ -67,6 +67,16 @@ class java_artisanal::java17 (
       alternatives { $cmd:
         path => $dest,
       }
+
+      ## If something removes a /usr/bin symlink managed by alternatives,
+      ## but does not change the preferred alternative,
+      ## the above by itself does not recreate the /usr/bin link.
+      ## Eg it seems as if updates to the system java-11-openjdk-headless
+      ## rpm can do this (see postinstall script).
+      file { $src:
+        ensure => link,
+        target => "/etc/alternatives/${cmd}",
+      }
     }
   }
 }
