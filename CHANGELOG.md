@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.5.0](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.5.0) (2025-10-24)
+
+[Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.4.1...v3.5.0)
+
+**Implemented enhancements:**
+
+- \(metadata.json\) bump archiver to include v8 [\#57](https://github.com/lsst-it/puppet-java_artisanal/pull/57) ([badenerb](https://github.com/badenerb))
+- Update dependency voxpupuli-test to v13 [\#55](https://github.com/lsst-it/puppet-java_artisanal/pull/55) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/labeler action to v6 [\#52](https://github.com/lsst-it/puppet-java_artisanal/pull/52) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v5 [\#50](https://github.com/lsst-it/puppet-java_artisanal/pull/50) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.4.1](https://github.com/lsst-it/puppet-java_artisanal/tree/v3.4.1) (2025-01-29)
 
 [Full Changelog](https://github.com/lsst-it/puppet-java_artisanal/compare/v3.4.0...v3.4.1)
