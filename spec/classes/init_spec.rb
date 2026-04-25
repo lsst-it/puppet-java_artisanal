@@ -20,13 +20,13 @@ describe 'java_artisanal' do
       it do
         is_expected.to contain_alternative_entry(dest).with(
           ensure: 'present',
-          priority: 1000
+          priority: 1000,
         )
       end
 
       it do
         is_expected.to contain_alternatives(cmd).with(
-          path: dest
+          path: dest,
         )
       end
     end
